@@ -145,9 +145,15 @@ function ProjectCard({
   technologies,
   icon,
   type,
+  link,
 }) {
   return (
-    <article className={`project-card ${type}`}>
+   <a
+     href={link}
+     target="_blank"
+     rel="noreferrer"
+     className={`project-card ${type}`}
+   >
 
       <div className="project-number">
         {number}
@@ -253,7 +259,7 @@ function ProjectCard({
 
       </div>
 
-    </article>
+    </a>
   );
 }
 /* ================= APP ================= */
@@ -581,6 +587,7 @@ export default function App() {
             subtitle="AI-POWERED DEVELOPER ASSISTANT"
             icon="AI"
             type="ai"
+           link="https://github.com/kusumbagdawat/Codepilot-AI.git"
             description="An AI-powered developer assistant for code review, bug detection, SQL generation, documentation, email generation and coding assistance."
             technologies={[
               "React",
@@ -598,6 +605,7 @@ export default function App() {
             subtitle="MICROSERVICES-BASED PLATFORM"
             icon="Q"
             type="quiz"
+            link="https://github.com/kusumbagdawat/Quiz-Application.git"
             description="A microservices-based online assessment platform with quiz management, automatic scoring, result tracking, JWT authentication and role-based authorization."
             technologies={[
               "Java",
@@ -616,6 +624,7 @@ export default function App() {
             subtitle="FULL-STACK MUSIC STREAMING"
             icon="♫"
             type="music"
+            link="https://github.com/kusumbagdawat/Musify.git"
             description="A full-stack music streaming application with admin and user panels, JWT authentication, playlists, albums, songs and RESTful APIs."
             technologies={[
               "Java",

@@ -3203,3 +3203,8 @@ button.outline {
   border-color: #d9b76d;
   transform: translateY(-2px);
 }
+.project-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
